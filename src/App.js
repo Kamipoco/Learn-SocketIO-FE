@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import TextField from "@material-ui/core/TextField";
 import "./App.css";
 
-const socket = io.connect("https://learn-socketio.herokuapp.com");
+const socket = io.connect("http://localhost:9009");
 
 function App() {
   const [state, setState] = useState({ name: "", message: "" });
